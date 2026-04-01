@@ -129,11 +129,12 @@ export default function Home() {
             className="flex-shrink-0"
           >
             <Image
-              src="/asset/Logo.png"
+              src="/asset/logo.png"
               alt="ગુરુકૃપા લોગો"
               width={220}
               height={70}
               className="h-12 lg:h-16 w-auto object-contain drop-shadow-md"
+              priority
             />
           </motion.div>
 
@@ -204,11 +205,12 @@ export default function Home() {
             <div className="relative z-10 p-8 flex flex-col h-full">
               <div className="flex justify-between items-center mb-16">
                 <Image
-                  src="/asset/Logo.png"
+                  src="/asset/logo.png"
                   alt="ગુરુકૃપા લોગો"
                   width={150}
                   height={50}
                   className="h-10 w-auto object-contain"
+                  priority
                 />
                 <button
                   onClick={() => setIsMenuOpen(false)}
@@ -475,6 +477,8 @@ export default function Home() {
                     alt={product.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+                    priority={idx < 6}
+                    loading={idx < 6 ? "eager" : "lazy"}
                   />
 
                   {/* Minimal Overlay */}

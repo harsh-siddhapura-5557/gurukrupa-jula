@@ -16,6 +16,11 @@ const hindVadodara = Hind_Vadodara({
 export const metadata: Metadata = {
   title: "ગુરુકૃપા ફેબ્રિકેશન & ઝુલા | Gurukrupa Fabrication & Jula",
   description: "ગુરુકૃપા ફેબ્રિકેશન & ઝુલા - તમારા ઘર માટે મજબૂત અને આધુનિક ડિઝાઇન",
+  icons: {
+    icon: "/asset/logo.png",
+    shortcut: "/asset/logo.png",
+    apple: "/asset/logo.png",
+  },
 };
 
 export default function RootLayout({
